@@ -11,7 +11,6 @@ def sortNum(num_list):
    num_odd = []
    num_even = []
 
-
    # Use a for loop to classify each number
    for num in num_list:
        # Use if statement to differentiated even number and odd number
@@ -20,10 +19,8 @@ def sortNum(num_list):
        else:
            num_odd.append(num)
 
-
    num_even = sorted(num_even)                 # Sort even number list
    num_odd = sorted(num_odd, reverse=True)     # Sort and reverse odd number list
-
 
    # Combine two number list together and put odd number in front of even number
    num_odd.extend(num_even)               
